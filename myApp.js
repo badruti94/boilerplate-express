@@ -47,7 +47,7 @@ app.get('/:word/echo', (req,res)=>{
     })
 })
 
-app.get('/name',(req,res)=>{
+app.post('/name',(req,res)=>{
     const first_name = req.body.first
     const last_name = req.body.last
 
