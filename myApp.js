@@ -48,8 +48,8 @@ app.get('/:word/echo', (req,res)=>{
 })
 
 app.get('/name',(req,res)=>{
-    const first_name = req.query.first
-    const last_name = req.query.last
+    const first_name = req.body.first
+    const last_name = req.body.last
 
     res.json({
         name : `${first_name} ${last_name}`
