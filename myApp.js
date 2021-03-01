@@ -13,10 +13,7 @@ app.use((req,res,next)=>{
     next()
 })
 
-app.use((req,res,next)=>{
-    bodyParse.urlencoded({extended:false})
-    next()
-})
+app.use(bodyParse.urlencoded({extended:false}))
 
 app.get('/', (req, res) => {
     res.sendFile(__dirname + '/views/index.html')
