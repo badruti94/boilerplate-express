@@ -4,6 +4,8 @@ var app = express();
 
 //console.log('Hello World')
 
+app.use('/public',__dirname+'/public')
+
 app.get('/',(req,res)=>{
     res.sendFile(__dirname + '/views/index.html')
 })
